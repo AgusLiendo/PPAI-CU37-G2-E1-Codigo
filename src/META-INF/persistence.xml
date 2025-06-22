@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+
+  <persistence-unit name="MiUnidadPersistencia" transaction-type="RESOURCE_LOCAL">
+    <class>Entidad.Rol</class>
+    <class>Entidad.Empleado</class>
+    <class>Entidad.Estado</class>
+    <class>Entidad.TipoMotivo</class>
+    <class>Entidad.MotivoFueraServicio</class>
+    <class>Entidad.Usuario</class>
+    <class>Entidad.Suscripcion</class>
+    <class>Entidad.Sesion</class>
+    <class>Entidad.Permiso</class>
+    <class>Entidad.Perfil</class>
+    <class>Entidad.CambioEstado</class>
+    <class>Entidad.Sismografo</class>
+    <class>Entidad.EstacionSismologica</class>
+    <class>Entidad.OrdenInspeccion</class>
+    
+    <!-- <exclude-unlisted-classes>false</exclude-unlisted-classes> -->
+    
+    <properties>
+      <!-- Datos de conexión -->
+      <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5433/redsismica"/>
+      <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+      <property name="jakarta.persistence.jdbc.password" value="postgres"/>
+
+      <!-- EclipseLink -->
+      <property name="eclipselink.logging.level" value="FINE"/>
+      <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+      <property name="eclipselink.ddl-generation.output-mode" value="database"/>
+    </properties>
+  </persistence-unit>
+</persistence>
+
