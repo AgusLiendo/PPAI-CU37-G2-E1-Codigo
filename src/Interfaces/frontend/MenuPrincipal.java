@@ -30,19 +30,19 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        opcionCerrarOrdenDeInspeccion = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setBackground(new java.awt.Color(0, 102, 153));
-        jButton1.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("CERRAR ORDEN DE INSPECCION");
-        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 102, 102), new java.awt.Color(0, 0, 0)));
-        jButton1.setMaximumSize(new java.awt.Dimension(121, 25));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        opcionCerrarOrdenDeInspeccion.setBackground(new java.awt.Color(0, 102, 153));
+        opcionCerrarOrdenDeInspeccion.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        opcionCerrarOrdenDeInspeccion.setForeground(new java.awt.Color(255, 255, 255));
+        opcionCerrarOrdenDeInspeccion.setText("CERRAR ORDEN DE INSPECCION");
+        opcionCerrarOrdenDeInspeccion.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 102, 102), new java.awt.Color(0, 0, 0)));
+        opcionCerrarOrdenDeInspeccion.setMaximumSize(new java.awt.Dimension(121, 25));
+        opcionCerrarOrdenDeInspeccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                opcionCerrarOrdenDeInspeccionActionPerformed(evt);
             }
         });
 
@@ -52,27 +52,27 @@ public class MenuPrincipal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(165, 165, 165)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(opcionCerrarOrdenDeInspeccion, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(193, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(161, 161, 161)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(opcionCerrarOrdenDeInspeccion, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(167, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        tablaOrdenesInspeccion nuevaVentana = new tablaOrdenesInspeccion(sesion);
-        nuevaVentana.setLocationRelativeTo(null);
+    private void opcionCerrarOrdenDeInspeccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcionCerrarOrdenDeInspeccionActionPerformed
+        tablaOrdenesInspeccion habilitarVentana = new tablaOrdenesInspeccion(sesion);
+        habilitarVentana.setLocationRelativeTo(null);
         this.setVisible(false);
-        nuevaVentana.setVisible(true);
+        habilitarVentana.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_opcionCerrarOrdenDeInspeccionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -110,6 +110,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton opcionCerrarOrdenDeInspeccion;
     // End of variables declaration//GEN-END:variables
 }

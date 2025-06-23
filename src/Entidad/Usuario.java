@@ -34,9 +34,6 @@ public class Usuario {
         return this.nombreUsuario.equals(nombreUsuario) && this.contrasenia.equals(contraseña);
     }
 
-    //public void login(String nombreUsuario, String contraseña){
-    //
-    //}
 
     //Getters y Setters
     public String getNombreUsuario() {

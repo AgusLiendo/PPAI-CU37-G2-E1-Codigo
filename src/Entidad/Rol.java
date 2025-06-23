@@ -20,6 +20,14 @@ public class Rol {
         this.descripcion = descripcion;
     }
 
+    public boolean sosResponsableDeReparacion(){
+        if (this.nombre.equals("ResponsableDeReparacion")){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
     public String getNombreRol() {
         return this.nombre;
     }

@@ -14,11 +14,8 @@ public class TipoMotivo {
     
     public TipoMotivo(){}
     
-    public void setNombreTipoMotivo(String nombreTipoMotivo) {
-        this.nombreTipoMotivo = nombreTipoMotivo;
-    }
     
-    public String getNombreTipoMotivo() {
+    public String getNombreMotivo() {
         return nombreTipoMotivo;
     }
     

@@ -43,8 +43,8 @@ public class tablaOrdenesInspeccion extends javax.swing.JFrame {
         modelo.setRowCount(0);
         for(InfoOrdenada c: ordenes){
             int cod = c.getNroOrden();
-            LocalDate fecha = c.getFechaFin();
-            String Nombre = c.getNombreEstacion();
+            LocalDate fecha = c.getFechaFinalizacion();
+            String Nombre = c.getNombre();
             Long Sismografo = c.getSismografo().getNroSerie();
             modelo.addRow(new Object[]{cod,fecha,Nombre,Sismografo});
         }

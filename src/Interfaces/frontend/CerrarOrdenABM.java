@@ -31,7 +31,7 @@ public class CerrarOrdenABM extends javax.swing.JFrame {
     public CerrarOrdenABM(GestorOrdenInspeccion gestor) {
         this.gestor = gestor;
         initComponents();
-        this.gestor.buscarMotivosFueraServicio(this);
+        this.gestor.buscarMotivosEstadoFueraServicio(this);
 
         
         

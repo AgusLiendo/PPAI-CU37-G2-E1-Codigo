@@ -33,7 +33,7 @@ public class MotivoFueraServicio {
     public static String[] getNombresMotivos(TipoMotivo[] tiposMotivo) {
         String[] nombresMotivos = new String[tiposMotivo.length];
         for (int i = 0; i < tiposMotivo.length; i++) {
-            nombresMotivos[i] = tiposMotivo[i].getNombreTipoMotivo();
+            nombresMotivos[i] = tiposMotivo[i].getNombreMotivo();
         }
         return nombresMotivos;
     }

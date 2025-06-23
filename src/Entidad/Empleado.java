@@ -33,7 +33,7 @@ public class Empleado {
     }
 
     public boolean sosResponsableDeReparacion(){
-        return this.rol.getNombreRol().equals("Reparacion");
+        return this.rol.sosResponsableDeReparacion();
     }//Devolveria true si su rol es igual a Reparacion
 
     //Getters y Setters

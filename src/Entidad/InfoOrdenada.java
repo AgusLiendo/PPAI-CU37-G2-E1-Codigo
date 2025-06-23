@@ -24,11 +24,11 @@ public class InfoOrdenada {
         return nroOrden;
     }
 
-    public LocalDate getFechaFin() {
+    public LocalDate getFechaFinalizacion() {
         return fechaFin;
     }
 
-    public String getNombreEstacion() {
+    public String getNombre() {
         return nombreEstacion;
     }
 
